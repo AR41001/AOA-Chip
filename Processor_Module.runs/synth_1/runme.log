@@ -1,0 +1,768 @@
+
+*** Running vivado
+    with args -log Processor.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Processor.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Processor.tcl -notrace
+Command: synth_design -top Processor -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23316 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 435.703 ; gain = 95.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Processor' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cu' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:23]
+	Parameter RESET bound to: 0 - type: integer 
+	Parameter FETCH bound to: 1 - type: integer 
+	Parameter DECODE bound to: 2 - type: integer 
+	Parameter ADD bound to: 3 - type: integer 
+	Parameter SUB bound to: 4 - type: integer 
+	Parameter CMP bound to: 5 - type: integer 
+	Parameter MOV bound to: 6 - type: integer 
+	Parameter INC bound to: 7 - type: integer 
+	Parameter DEC bound to: 8 - type: integer 
+	Parameter SHL bound to: 9 - type: integer 
+	Parameter SHR bound to: 10 - type: integer 
+	Parameter LD bound to: 11 - type: integer 
+	Parameter STO bound to: 12 - type: integer 
+	Parameter LDI bound to: 13 - type: integer 
+	Parameter JE bound to: 14 - type: integer 
+	Parameter JNE bound to: 15 - type: integer 
+	Parameter JC bound to: 16 - type: integer 
+	Parameter JMP bound to: 17 - type: integer 
+	Parameter HALT bound to: 18 - type: integer 
+	Parameter ILLEGAL_OP bound to: 31 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:88]
+WARNING: [Synth 8-567] referenced signal 'ps_N' should be on the sensitivity list [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'ps_Z' should be on the sensitivity list [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'ps_C' should be on the sensitivity list [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'IR' should be on the sensitivity list [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'N' should be on the sensitivity list [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'Z' should be on the sensitivity list [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'C' should be on the sensitivity list [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'cu' (1#1) [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CPU_EU' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/CPU_EU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IR' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/IR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (2#1) [D:/Processor_Module/Processor_Module.srcs/sources_1/new/IR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IDP' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Register_File' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reg16' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/reg16.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'reg16' (3#1) [D:/Processor_Module/Processor_Module.srcs/sources_1/new/reg16.v:23]
+WARNING: [Synth 8-3848] Net r0_ld in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:41]
+WARNING: [Synth 8-3848] Net r0_oea in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:41]
+WARNING: [Synth 8-3848] Net r0_oeb in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:41]
+WARNING: [Synth 8-3848] Net r1_ld in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:40]
+WARNING: [Synth 8-3848] Net r1_oea in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:40]
+WARNING: [Synth 8-3848] Net r1_oeb in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:40]
+WARNING: [Synth 8-3848] Net r2_ld in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:39]
+WARNING: [Synth 8-3848] Net r2_oea in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:39]
+WARNING: [Synth 8-3848] Net r2_oeb in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:39]
+WARNING: [Synth 8-3848] Net r3_ld in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:38]
+WARNING: [Synth 8-3848] Net r3_oea in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:38]
+WARNING: [Synth 8-3848] Net r3_oeb in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:38]
+WARNING: [Synth 8-3848] Net r4_ld in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:37]
+WARNING: [Synth 8-3848] Net r4_oea in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:37]
+WARNING: [Synth 8-3848] Net r4_oeb in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:37]
+WARNING: [Synth 8-3848] Net r5_ld in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:36]
+WARNING: [Synth 8-3848] Net r5_oea in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:36]
+WARNING: [Synth 8-3848] Net r5_oeb in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:36]
+WARNING: [Synth 8-3848] Net r6_ld in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:35]
+WARNING: [Synth 8-3848] Net r6_oea in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:35]
+WARNING: [Synth 8-3848] Net r6_oeb in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:35]
+WARNING: [Synth 8-3848] Net r7_ld in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:34]
+WARNING: [Synth 8-3848] Net r7_oea in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:34]
+WARNING: [Synth 8-3848] Net r7_oeb in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'Register_File' (4#1) [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [D:/Processor_Module/Processor_Module.srcs/sources_1/new/ALU.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'N' does not match port width (16) of module 'ALU' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:55]
+WARNING: [Synth 8-689] width (1) of port connection 'Z' does not match port width (16) of module 'ALU' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:55]
+WARNING: [Synth 8-689] width (1) of port connection 'C' does not match port width (16) of module 'ALU' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'IDP' (6#1) [D:/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (7#1) [D:/Processor_Module/Processor_Module.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_EU' (8#1) [D:/Processor_Module/Processor_Module.srcs/sources_1/new/CPU_EU.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'address' does not match port width (16) of module 'CPU_EU' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:56]
+WARNING: [Synth 8-689] width (1) of port connection 'D_out' does not match port width (16) of module 'CPU_EU' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:56]
+INFO: [Synth 8-6157] synthesizing module 'Button_Press' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Button_Press.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DFF_PWM' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'DFF_PWM' (9#1) [D:/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'Button_Press' (10#1) [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Button_Press.v:23]
+WARNING: [Synth 8-689] width (16) of port connection 'BUTTONS' does not match port width (4) of module 'Button_Press' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:59]
+INFO: [Synth 8-6157] synthesizing module 'PWM_Generator' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PWM_Generator' (11#1) [D:/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:3]
+WARNING: [Synth 8-689] width (16) of port connection 'PWM_OUT' does not match port width (1) of module 'PWM_Generator' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'Processor' (12#1) [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+WARNING: [Synth 8-3917] design Processor has port D_OUT[15] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[14] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[13] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[12] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[11] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[10] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[9] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[8] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[7] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[6] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[5] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[4] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[3] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[2] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[1] driven by constant 0
+WARNING: [Synth 8-3331] design Button_Press has unconnected port BUTTONS[3]
+WARNING: [Synth 8-3331] design Button_Press has unconnected port BUTTONS[2]
+WARNING: [Synth 8-3331] design Button_Press has unconnected port BUTTONS[1]
+WARNING: [Synth 8-3331] design Button_Press has unconnected port BUTTONS[0]
+WARNING: [Synth 8-3331] design Register_File has unconnected port W_Adr[2]
+WARNING: [Synth 8-3331] design Register_File has unconnected port W_Adr[1]
+WARNING: [Synth 8-3331] design Register_File has unconnected port W_Adr[0]
+WARNING: [Synth 8-3331] design Register_File has unconnected port we
+WARNING: [Synth 8-3331] design Register_File has unconnected port R_Adr[2]
+WARNING: [Synth 8-3331] design Register_File has unconnected port R_Adr[1]
+WARNING: [Synth 8-3331] design Register_File has unconnected port R_Adr[0]
+WARNING: [Synth 8-3331] design Register_File has unconnected port S_Adr[2]
+WARNING: [Synth 8-3331] design Register_File has unconnected port S_Adr[1]
+WARNING: [Synth 8-3331] design Register_File has unconnected port S_Adr[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 489.809 ; gain = 149.105
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin R7:ld to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:55]
+WARNING: [Synth 8-3295] tying undriven pin R7:oeA to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:55]
+WARNING: [Synth 8-3295] tying undriven pin R7:oeB to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:55]
+WARNING: [Synth 8-3295] tying undriven pin R6:ld to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:56]
+WARNING: [Synth 8-3295] tying undriven pin R6:oeA to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:56]
+WARNING: [Synth 8-3295] tying undriven pin R6:oeB to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:56]
+WARNING: [Synth 8-3295] tying undriven pin R5:ld to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:57]
+WARNING: [Synth 8-3295] tying undriven pin R5:oeA to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:57]
+WARNING: [Synth 8-3295] tying undriven pin R5:oeB to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:57]
+WARNING: [Synth 8-3295] tying undriven pin R4:ld to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:58]
+WARNING: [Synth 8-3295] tying undriven pin R4:oeA to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:58]
+WARNING: [Synth 8-3295] tying undriven pin R4:oeB to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:58]
+WARNING: [Synth 8-3295] tying undriven pin R3:ld to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:59]
+WARNING: [Synth 8-3295] tying undriven pin R3:oeA to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:59]
+WARNING: [Synth 8-3295] tying undriven pin R3:oeB to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:59]
+WARNING: [Synth 8-3295] tying undriven pin R2:ld to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:60]
+WARNING: [Synth 8-3295] tying undriven pin R2:oeA to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:60]
+WARNING: [Synth 8-3295] tying undriven pin R2:oeB to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:60]
+WARNING: [Synth 8-3295] tying undriven pin R1:ld to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:61]
+WARNING: [Synth 8-3295] tying undriven pin R1:oeA to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:61]
+WARNING: [Synth 8-3295] tying undriven pin R1:oeB to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:61]
+WARNING: [Synth 8-3295] tying undriven pin R0:ld to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:62]
+WARNING: [Synth 8-3295] tying undriven pin R0:oeA to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:62]
+WARNING: [Synth 8-3295] tying undriven pin R0:oeB to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:62]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 489.809 ; gain = 149.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 489.809 ; gain = 149.105
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Processor_Module/Processor_Module.srcs/constrs_1/new/Processor_XDC.xdc]
+Finished Parsing XDC File [D:/Processor_Module/Processor_Module.srcs/constrs_1/new/Processor_XDC.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Processor_Module/Processor_Module.srcs/constrs_1/new/Processor_XDC.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Processor_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Processor_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 838.113 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 838.113 ; gain = 497.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 838.113 ; gain = 497.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 838.113 ; gain = 497.410
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'cu'
+INFO: [Synth 8-5546] ROM "W_Adr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "W_Adr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "W_Adr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "W_Adr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "W_Adr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "W_Adr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "W_Adr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "W_Adr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "W_Adr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "W_Adr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "W_Adr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "W_Adr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "W_Adr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "W_Adr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "W_Adr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "W_Adr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "W_Adr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "nextstate" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "Z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Increase_duty" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Decrease_duty" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:48]
+INFO: [Synth 8-5545] ROM "slow_clk_enable" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'W_Adr_reg' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:91]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_nextstate_reg' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_nextstate_reg' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:97]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   RESET |                            00000 |                            00000
+                   FETCH |                            00001 |                            00001
+                  DECODE |                            00010 |                            00010
+                     ADD |                            00011 |                            00011
+                     SUB |                            00100 |                            00100
+                     CMP |                            00101 |                            00101
+                     MOV |                            00110 |                            00110
+                     SHL |                            00111 |                            01001
+                     SHR |                            01000 |                            01010
+                     INC |                            01001 |                            00111
+                     DEC |                            01010 |                            01000
+                      LD |                            01011 |                            01011
+                     STO |                            01100 |                            01100
+                     LDI |                            01101 |                            01101
+                    HALT |                            01110 |                            10010
+                      JE |                            01111 |                            01110
+                     JNE |                            10000 |                            01111
+                      JC |                            10001 |                            10000
+                     JMP |                            10010 |                            10001
+              ILLEGAL_OP |                            10011 |                            11111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'cu'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_nextstate_reg' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'R_Adr_reg' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:91]
+WARNING: [Synth 8-327] inferring latch for variable 'S_Adr_reg' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:91]
+WARNING: [Synth 8-327] inferring latch for variable 'adr_sel_reg' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:92]
+WARNING: [Synth 8-327] inferring latch for variable 's_sel_reg' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:92]
+WARNING: [Synth 8-327] inferring latch for variable 'pc_ld_reg' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:93]
+WARNING: [Synth 8-327] inferring latch for variable 'pc_inc_reg' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:93]
+WARNING: [Synth 8-327] inferring latch for variable 'pc_sel_reg' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:93]
+WARNING: [Synth 8-327] inferring latch for variable 'ir_ld_reg' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:93]
+WARNING: [Synth 8-327] inferring latch for variable 'mw_en_reg' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'rw_en_reg' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_op_reg' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'status_reg' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'ns_C_reg' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:95]
+WARNING: [Synth 8-327] inferring latch for variable 'ns_Z_reg' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:95]
+WARNING: [Synth 8-327] inferring latch for variable 'ns_N_reg' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:95]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 838.113 ; gain = 497.410
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 9     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	  20 Input      8 Bit        Muxes := 1     
+	  20 Input      5 Bit        Muxes := 2     
+	  17 Input      5 Bit        Muxes := 1     
+	  20 Input      4 Bit        Muxes := 1     
+	  20 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	  20 Input      1 Bit        Muxes := 29    
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module cu 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  20 Input      8 Bit        Muxes := 1     
+	  20 Input      5 Bit        Muxes := 2     
+	  17 Input      5 Bit        Muxes := 1     
+	  20 Input      4 Bit        Muxes := 1     
+	  20 Input      3 Bit        Muxes := 3     
+	  20 Input      1 Bit        Muxes := 29    
+Module IR 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module reg16 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 2     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module IDP 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module CPU_EU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+Module DFF_PWM 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Button_Press 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module PWM_Generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element u3/button_dff1/Q_reg was removed.  [D:/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:69]
+WARNING: [Synth 8-6014] Unused sequential element u3/button_dff2/Q_reg was removed.  [D:/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:69]
+WARNING: [Synth 8-6014] Unused sequential element u3/button_dff3/Q_reg was removed.  [D:/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:69]
+WARNING: [Synth 8-6014] Unused sequential element u3/button_dff4/Q_reg was removed.  [D:/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:69]
+INFO: [Synth 8-5546] ROM "u1/u1/u1/Z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "u2/slow_clk_enable" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design Processor has port D_OUT[15] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[14] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[13] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[12] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[11] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[10] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[9] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[8] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[7] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[6] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[5] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[4] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[3] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[2] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[1] driven by constant 0
+WARNING: [Synth 8-3332] Sequential element (u0/W_Adr_reg[2]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u0/W_Adr_reg[1]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u0/W_Adr_reg[0]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u0/R_Adr_reg[2]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u0/R_Adr_reg[1]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u0/R_Adr_reg[0]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u0/S_Adr_reg[2]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u0/S_Adr_reg[1]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u0/S_Adr_reg[0]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u0/rw_en_reg) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u0/Dout_reg[8]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u0/Dout_reg[7]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u0/Dout_reg[6]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u0/Dout_reg[5]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u0/Dout_reg[4]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u0/Dout_reg[3]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u0/Dout_reg[2]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u0/Dout_reg[1]) is unused and will be removed from module Processor.
+INFO: [Synth 8-3886] merging instance 'u2/PWM_DFF1/Q_reg' (FDE) to 'u2/PWM_DFF3/Q_reg'
+INFO: [Synth 8-3886] merging instance 'u2/PWM_DFF2/Q_reg' (FDE) to 'u2/PWM_DFF4/Q_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u2/PWM_DFF3/Q_reg )
+INFO: [Synth 8-3886] merging instance 'u2/PWM_DFF4/Q_reg' (FDE) to 'u2/PWM_DFF3/Q_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u0/alu_op_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u2/PWM_DFF3/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (p_0_out_inferred/\u2/DUTY_CYCLE_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (p_0_out_inferred/\u2/DUTY_CYCLE_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (u0/alu_op_reg[3]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u2/PWM_DFF3/Q_reg) is unused and will be removed from module Processor.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 838.113 ; gain = 497.410
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 838.113 ; gain = 497.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 838.113 ; gain = 497.410
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R7/Dout_reg[15]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R7/Dout_reg[14]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R7/Dout_reg[13]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R7/Dout_reg[12]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R7/Dout_reg[11]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R7/Dout_reg[10]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R7/Dout_reg[9]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R7/Dout_reg[8]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R7/Dout_reg[7]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R7/Dout_reg[6]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R7/Dout_reg[5]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R7/Dout_reg[4]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R7/Dout_reg[3]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R7/Dout_reg[2]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R7/Dout_reg[1]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R7/Dout_reg[0]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R6/Dout_reg[15]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R6/Dout_reg[14]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R6/Dout_reg[13]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R6/Dout_reg[12]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R6/Dout_reg[11]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R6/Dout_reg[10]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R6/Dout_reg[9]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R6/Dout_reg[8]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R6/Dout_reg[7]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R6/Dout_reg[6]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R6/Dout_reg[5]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R6/Dout_reg[4]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R6/Dout_reg[3]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R6/Dout_reg[2]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R6/Dout_reg[1]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R6/Dout_reg[0]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R5/Dout_reg[15]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R5/Dout_reg[14]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R5/Dout_reg[13]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R5/Dout_reg[12]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R5/Dout_reg[11]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R5/Dout_reg[10]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R5/Dout_reg[9]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R5/Dout_reg[8]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R5/Dout_reg[7]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R5/Dout_reg[6]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R5/Dout_reg[5]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R5/Dout_reg[4]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R5/Dout_reg[3]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R5/Dout_reg[2]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R5/Dout_reg[1]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R5/Dout_reg[0]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R4/Dout_reg[15]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R4/Dout_reg[14]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R4/Dout_reg[13]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R4/Dout_reg[12]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R4/Dout_reg[11]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R4/Dout_reg[10]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R4/Dout_reg[9]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R4/Dout_reg[8]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R4/Dout_reg[7]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R4/Dout_reg[6]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R4/Dout_reg[5]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R4/Dout_reg[4]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R4/Dout_reg[3]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R4/Dout_reg[2]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R4/Dout_reg[1]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R4/Dout_reg[0]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R3/Dout_reg[15]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R3/Dout_reg[14]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R3/Dout_reg[13]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R3/Dout_reg[12]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R3/Dout_reg[11]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R3/Dout_reg[10]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R3/Dout_reg[9]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R3/Dout_reg[8]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R3/Dout_reg[7]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R3/Dout_reg[6]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R3/Dout_reg[5]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R3/Dout_reg[4]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R3/Dout_reg[3]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R3/Dout_reg[2]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R3/Dout_reg[1]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (u1/u1/u0/R3/Dout_reg[0]) is unused and will be removed from module Processor.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 855.496 ; gain = 514.793
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin i_0:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_1:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_2:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_3:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_4:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_5:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_6:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_7:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_8:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_9:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_10:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_11:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_12:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_13:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_14:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_15:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_16:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_17:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_18:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_19:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_20:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_21:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_22:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_23:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_24:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_25:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_26:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_27:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_28:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_29:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_30:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_31:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_32:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_33:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_34:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_35:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_36:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_37:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_39:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_40:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_41:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_42:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_43:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_44:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_45:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_46:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_47:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_48:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_49:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_50:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_51:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_52:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_53:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_54:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_55:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_56:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_57:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_58:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_59:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_60:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_61:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_62:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_63:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_64:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_65:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_66:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_67:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_68:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_69:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_70:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_71:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_72:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_73:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_74:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_75:en to constant 0
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 855.496 ; gain = 514.793
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 855.496 ; gain = 514.793
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 855.496 ; gain = 514.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 855.496 ; gain = 514.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 855.496 ; gain = 514.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 855.496 ; gain = 514.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    18|
+|3     |LUT1   |     1|
+|4     |LUT2   |     2|
+|5     |LUT3   |    65|
+|6     |LUT4   |    38|
+|7     |LUT5   |    24|
+|8     |LUT6   |    76|
+|9     |FDCE   |    17|
+|10    |FDRE   |     4|
+|11    |LD     |    26|
+|12    |IBUF   |    18|
+|13    |OBUF   |    29|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+--------------+------+
+|      |Instance |Module        |Cells |
++------+---------+--------------+------+
+|1     |top      |              |   319|
+|2     |  u0     |cu            |   230|
+|3     |  u1     |CPU_EU        |    31|
+|4     |    u0   |IR            |    13|
+|5     |    u1   |IDP           |    17|
+|6     |      u1 |ALU           |    17|
+|7     |    u2   |PC            |     1|
+|8     |  u2     |PWM_Generator |    10|
++------+---------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 855.496 ; gain = 514.793
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 442 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 855.496 ; gain = 166.488
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 855.496 ; gain = 514.793
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 62 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 26 instances were transformed.
+  LD => LDCE: 26 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+74 Infos, 305 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 855.496 ; gain = 526.820
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Processor_Module/Processor_Module.runs/synth_1/Processor.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Processor_utilization_synth.rpt -pb Processor_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 855.496 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 26 19:38:58 2023...

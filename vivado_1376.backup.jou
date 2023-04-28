@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Apr 13 21:37:15 2023
+# Process ID: 1376
+# Current directory: D:/Processor_Module
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14068 D:\Processor_Module\Processor_Module.xpr
+# Log file: D:/Processor_Module/vivado.log
+# Journal file: D:/Processor_Module\vivado.jou
+#-----------------------------------------------------------
+start_guioopen_project D:/Processor_Module/Processor_Module.xpruupdate_compile_order -fileset sources_1ssynth_design -rtl -name rtl_1
+close [ open D:/Processor_Module/Processor_Module.srcs/sources_1/new/Edge_Detector.v w ]
+add_files D:/Processor_Module/Processor_Module.srcs/sources_1/new/Edge_Detector.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/Processor_Module/Processor_Module.srcs/sources_1/new/Edge_Detector.v] -no_script -reset -force -quiet
+remove_files  D:/Processor_Module/Processor_Module.srcs/sources_1/new/Edge_Detector.v
+close [ open D:/Processor_Module/Processor_Module.srcs/sources_1/new/Button_Press.v w ]
+add_files D:/Processor_Module/Processor_Module.srcs/sources_1/new/Button_Press.v
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+refresh_design
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+current_design rtl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {D_in[15]} {D_in[14]} {D_in[13]} {D_in[12]} {D_in[11]} {D_in[10]} {D_in[9]} {D_in[8]} {D_in[7]} {D_in[6]} {D_in[5]} {D_in[4]} {D_in[3]} {D_in[2]} {D_in[1]} {D_in[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {D_OUT[15]} {D_OUT[14]} {D_OUT[13]} {D_OUT[12]} {D_OUT[11]} {D_OUT[10]} {D_OUT[9]} {D_OUT[8]} {D_OUT[7]} {D_OUT[6]} {D_OUT[5]} {D_OUT[4]} {D_OUT[3]} {D_OUT[2]} {D_OUT[1]} {D_OUT[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {status[7]} {status[6]} {status[5]} {status[4]} {status[3]} {status[2]} {status[1]} {status[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list reset]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list mw_en]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list inc]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list dec]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list D_out]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Address]]
+place_ports clk E3
+file mkdir D:/Processor_Module/Processor_Module.srcs/constrs_1/new
+close [ open D:/Processor_Module/Processor_Module.srcs/constrs_1/new/Processor_XDC.xdc w ]
+add_files -fileset constrs_1 D:/Processor_Module/Processor_Module.srcs/constrs_1/new/Processor_XDC.xdc
+set_property target_constrs_file D:/Processor_Module/Processor_Module.srcs/constrs_1/new/Processor_XDC.xdc [current_fileset -constrset]
+save_constraints -force

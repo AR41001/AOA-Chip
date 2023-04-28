@@ -1,0 +1,882 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Apr 11 22:03:32 2023
+# Process ID: 2028
+# Current directory: C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18136 C:\Users\obaid\Desktop\GIKI\Final Year Project\Processor_Module\Processor_Module.xpr
+# Log file: C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/vivado.log
+# Journal file: C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/obaid/Desktop/Processor_Module' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 927.676 ; gain = 164.891
+update_compile_order -fileset sources_1
+close [ open {C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v} w ]
+add_files {{C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v}}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: Processor
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1055.609 ; gain = 91.066
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Processor' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cu' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:23]
+	Parameter RESET bound to: 0 - type: integer 
+	Parameter FETCH bound to: 1 - type: integer 
+	Parameter DECODE bound to: 2 - type: integer 
+	Parameter ADD bound to: 3 - type: integer 
+	Parameter SUB bound to: 4 - type: integer 
+	Parameter CMP bound to: 5 - type: integer 
+	Parameter MOV bound to: 6 - type: integer 
+	Parameter INC bound to: 7 - type: integer 
+	Parameter DEC bound to: 8 - type: integer 
+	Parameter SHL bound to: 9 - type: integer 
+	Parameter SHR bound to: 10 - type: integer 
+	Parameter LD bound to: 11 - type: integer 
+	Parameter STO bound to: 12 - type: integer 
+	Parameter LDI bound to: 13 - type: integer 
+	Parameter JE bound to: 14 - type: integer 
+	Parameter JNE bound to: 15 - type: integer 
+	Parameter JC bound to: 16 - type: integer 
+	Parameter JMP bound to: 17 - type: integer 
+	Parameter HALT bound to: 18 - type: integer 
+	Parameter ILLEGAL_OP bound to: 31 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:88]
+WARNING: [Synth 8-567] referenced signal 'ps_N' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'ps_Z' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'ps_C' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'IR' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'N' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'Z' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'C' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'cu' (1#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CPU_EU' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/CPU_EU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IR' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (2#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IDP' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Register_File' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reg16' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/reg16.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'reg16' (3#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/reg16.v:23]
+WARNING: [Synth 8-3848] Net r0_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:41]
+WARNING: [Synth 8-3848] Net r0_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:41]
+WARNING: [Synth 8-3848] Net r0_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:41]
+WARNING: [Synth 8-3848] Net r1_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:40]
+WARNING: [Synth 8-3848] Net r1_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:40]
+WARNING: [Synth 8-3848] Net r1_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:40]
+WARNING: [Synth 8-3848] Net r2_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:39]
+WARNING: [Synth 8-3848] Net r2_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:39]
+WARNING: [Synth 8-3848] Net r2_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:39]
+WARNING: [Synth 8-3848] Net r3_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:38]
+WARNING: [Synth 8-3848] Net r3_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:38]
+WARNING: [Synth 8-3848] Net r3_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:38]
+WARNING: [Synth 8-3848] Net r4_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:37]
+WARNING: [Synth 8-3848] Net r4_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:37]
+WARNING: [Synth 8-3848] Net r4_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:37]
+WARNING: [Synth 8-3848] Net r5_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:36]
+WARNING: [Synth 8-3848] Net r5_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:36]
+WARNING: [Synth 8-3848] Net r5_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:36]
+WARNING: [Synth 8-3848] Net r6_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:35]
+WARNING: [Synth 8-3848] Net r6_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:35]
+WARNING: [Synth 8-3848] Net r6_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:35]
+WARNING: [Synth 8-3848] Net r7_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:34]
+WARNING: [Synth 8-3848] Net r7_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:34]
+WARNING: [Synth 8-3848] Net r7_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'Register_File' (4#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/ALU.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'N' does not match port width (16) of module 'ALU' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:55]
+WARNING: [Synth 8-689] width (1) of port connection 'Z' does not match port width (16) of module 'ALU' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:55]
+WARNING: [Synth 8-689] width (1) of port connection 'C' does not match port width (16) of module 'ALU' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'IDP' (6#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (7#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_EU' (8#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/CPU_EU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Processor' (9#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+WARNING: [Synth 8-3331] design Register_File has unconnected port W_Adr[2]
+WARNING: [Synth 8-3331] design Register_File has unconnected port W_Adr[1]
+WARNING: [Synth 8-3331] design Register_File has unconnected port W_Adr[0]
+WARNING: [Synth 8-3331] design Register_File has unconnected port we
+WARNING: [Synth 8-3331] design Register_File has unconnected port R_Adr[2]
+WARNING: [Synth 8-3331] design Register_File has unconnected port R_Adr[1]
+WARNING: [Synth 8-3331] design Register_File has unconnected port R_Adr[0]
+WARNING: [Synth 8-3331] design Register_File has unconnected port S_Adr[2]
+WARNING: [Synth 8-3331] design Register_File has unconnected port S_Adr[1]
+WARNING: [Synth 8-3331] design Register_File has unconnected port S_Adr[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1100.211 ; gain = 135.668
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin R7:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:55]
+WARNING: [Synth 8-3295] tying undriven pin R7:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:55]
+WARNING: [Synth 8-3295] tying undriven pin R7:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:55]
+WARNING: [Synth 8-3295] tying undriven pin R6:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:56]
+WARNING: [Synth 8-3295] tying undriven pin R6:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:56]
+WARNING: [Synth 8-3295] tying undriven pin R6:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:56]
+WARNING: [Synth 8-3295] tying undriven pin R5:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:57]
+WARNING: [Synth 8-3295] tying undriven pin R5:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:57]
+WARNING: [Synth 8-3295] tying undriven pin R5:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:57]
+WARNING: [Synth 8-3295] tying undriven pin R4:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:58]
+WARNING: [Synth 8-3295] tying undriven pin R4:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:58]
+WARNING: [Synth 8-3295] tying undriven pin R4:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:58]
+WARNING: [Synth 8-3295] tying undriven pin R3:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:59]
+WARNING: [Synth 8-3295] tying undriven pin R3:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:59]
+WARNING: [Synth 8-3295] tying undriven pin R3:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:59]
+WARNING: [Synth 8-3295] tying undriven pin R2:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:60]
+WARNING: [Synth 8-3295] tying undriven pin R2:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:60]
+WARNING: [Synth 8-3295] tying undriven pin R2:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:60]
+WARNING: [Synth 8-3295] tying undriven pin R1:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:61]
+WARNING: [Synth 8-3295] tying undriven pin R1:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:61]
+WARNING: [Synth 8-3295] tying undriven pin R1:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:61]
+WARNING: [Synth 8-3295] tying undriven pin R0:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:62]
+WARNING: [Synth 8-3295] tying undriven pin R0:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:62]
+WARNING: [Synth 8-3295] tying undriven pin R0:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:62]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1100.211 ; gain = 135.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1100.211 ; gain = 135.668
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:44 ; elapsed = 00:00:39 . Memory (MB): peak = 1508.918 ; gain = 544.375
+23 Infos, 68 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:39 . Memory (MB): peak = 1508.918 ; gain = 544.375
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1508.918 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Processor' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cu' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:23]
+	Parameter RESET bound to: 0 - type: integer 
+	Parameter FETCH bound to: 1 - type: integer 
+	Parameter DECODE bound to: 2 - type: integer 
+	Parameter ADD bound to: 3 - type: integer 
+	Parameter SUB bound to: 4 - type: integer 
+	Parameter CMP bound to: 5 - type: integer 
+	Parameter MOV bound to: 6 - type: integer 
+	Parameter INC bound to: 7 - type: integer 
+	Parameter DEC bound to: 8 - type: integer 
+	Parameter SHL bound to: 9 - type: integer 
+	Parameter SHR bound to: 10 - type: integer 
+	Parameter LD bound to: 11 - type: integer 
+	Parameter STO bound to: 12 - type: integer 
+	Parameter LDI bound to: 13 - type: integer 
+	Parameter JE bound to: 14 - type: integer 
+	Parameter JNE bound to: 15 - type: integer 
+	Parameter JC bound to: 16 - type: integer 
+	Parameter JMP bound to: 17 - type: integer 
+	Parameter HALT bound to: 18 - type: integer 
+	Parameter ILLEGAL_OP bound to: 31 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:88]
+WARNING: [Synth 8-567] referenced signal 'ps_N' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'ps_Z' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'ps_C' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'IR' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'N' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'Z' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'C' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'cu' (1#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CPU_EU' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/CPU_EU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IR' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (2#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IDP' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Register_File' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reg16' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/reg16.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'reg16' (3#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/reg16.v:23]
+WARNING: [Synth 8-3848] Net r0_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:41]
+WARNING: [Synth 8-3848] Net r0_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:41]
+WARNING: [Synth 8-3848] Net r0_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:41]
+WARNING: [Synth 8-3848] Net r1_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:40]
+WARNING: [Synth 8-3848] Net r1_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:40]
+WARNING: [Synth 8-3848] Net r1_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:40]
+WARNING: [Synth 8-3848] Net r2_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:39]
+WARNING: [Synth 8-3848] Net r2_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:39]
+WARNING: [Synth 8-3848] Net r2_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:39]
+WARNING: [Synth 8-3848] Net r3_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:38]
+WARNING: [Synth 8-3848] Net r3_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:38]
+WARNING: [Synth 8-3848] Net r3_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:38]
+WARNING: [Synth 8-3848] Net r4_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:37]
+WARNING: [Synth 8-3848] Net r4_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:37]
+WARNING: [Synth 8-3848] Net r4_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:37]
+WARNING: [Synth 8-3848] Net r5_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:36]
+WARNING: [Synth 8-3848] Net r5_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:36]
+WARNING: [Synth 8-3848] Net r5_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:36]
+WARNING: [Synth 8-3848] Net r6_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:35]
+WARNING: [Synth 8-3848] Net r6_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:35]
+WARNING: [Synth 8-3848] Net r6_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:35]
+WARNING: [Synth 8-3848] Net r7_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:34]
+WARNING: [Synth 8-3848] Net r7_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:34]
+WARNING: [Synth 8-3848] Net r7_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'Register_File' (4#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/ALU.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'N' does not match port width (16) of module 'ALU' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:55]
+WARNING: [Synth 8-689] width (1) of port connection 'Z' does not match port width (16) of module 'ALU' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:55]
+WARNING: [Synth 8-689] width (1) of port connection 'C' does not match port width (16) of module 'ALU' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'IDP' (6#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (7#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_EU' (8#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/CPU_EU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PWM_Generator' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DFF_PWM' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'DFF_PWM' (9#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'PWM_Generator' (10#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:3]
+WARNING: [Synth 8-689] width (16) of port connection 'increase_duty' does not match port width (1) of module 'PWM_Generator' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:55]
+WARNING: [Synth 8-689] width (16) of port connection 'decrease_duty' does not match port width (1) of module 'PWM_Generator' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:55]
+WARNING: [Synth 8-689] width (16) of port connection 'PWM_OUT' does not match port width (1) of module 'PWM_Generator' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:55]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[1] with 1st driver pin 'Processor:/u1/D_out[1]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[1] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[1] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[2] with 1st driver pin 'Processor:/u1/D_out[2]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[2] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[2] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[3] with 1st driver pin 'Processor:/u1/D_out[3]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[3] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[3] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[4] with 1st driver pin 'Processor:/u1/D_out[4]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[4] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[4] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[5] with 1st driver pin 'Processor:/u1/D_out[5]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[5] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[5] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[6] with 1st driver pin 'Processor:/u1/D_out[6]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[6] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[6] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[7] with 1st driver pin 'Processor:/u1/D_out[7]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[7] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[7] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[8] with 1st driver pin 'Processor:/u1/D_out[8]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[8] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[8] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[9] with 1st driver pin 'Processor:/u1/D_out[9]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[9] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[9] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[10] with 1st driver pin 'Processor:/u1/D_out[10]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[10] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[10] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[11] with 1st driver pin 'Processor:/u1/D_out[11]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[11] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[11] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[12] with 1st driver pin 'Processor:/u1/D_out[12]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[12] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[12] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[13] with 1st driver pin 'Processor:/u1/D_out[13]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[13] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[13] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[14] with 1st driver pin 'Processor:/u1/D_out[14]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[14] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[14] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[15] with 1st driver pin 'Processor:/u1/D_out[15]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[15] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[15] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Processor' (11#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+WARNING: [Synth 8-3917] design Processor has port D_out[15] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[14] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[13] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[12] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[11] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[10] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[9] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[8] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[7] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[6] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[5] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[4] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[3] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[2] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[1] driven by constant 0
+WARNING: [Synth 8-3331] design Register_File has unconnected port W_Adr[2]
+WARNING: [Synth 8-3331] design Register_File has unconnected port W_Adr[1]
+WARNING: [Synth 8-3331] design Register_File has unconnected port W_Adr[0]
+WARNING: [Synth 8-3331] design Register_File has unconnected port we
+WARNING: [Synth 8-3331] design Register_File has unconnected port R_Adr[2]
+WARNING: [Synth 8-3331] design Register_File has unconnected port R_Adr[1]
+WARNING: [Synth 8-3331] design Register_File has unconnected port R_Adr[0]
+WARNING: [Synth 8-3331] design Register_File has unconnected port S_Adr[2]
+WARNING: [Synth 8-3331] design Register_File has unconnected port S_Adr[1]
+WARNING: [Synth 8-3331] design Register_File has unconnected port S_Adr[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1536.398 ; gain = 27.480
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin R7:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:55]
+WARNING: [Synth 8-3295] tying undriven pin R7:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:55]
+WARNING: [Synth 8-3295] tying undriven pin R7:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:55]
+WARNING: [Synth 8-3295] tying undriven pin R6:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:56]
+WARNING: [Synth 8-3295] tying undriven pin R6:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:56]
+WARNING: [Synth 8-3295] tying undriven pin R6:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:56]
+WARNING: [Synth 8-3295] tying undriven pin R5:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:57]
+WARNING: [Synth 8-3295] tying undriven pin R5:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:57]
+WARNING: [Synth 8-3295] tying undriven pin R5:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:57]
+WARNING: [Synth 8-3295] tying undriven pin R4:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:58]
+WARNING: [Synth 8-3295] tying undriven pin R4:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:58]
+WARNING: [Synth 8-3295] tying undriven pin R4:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:58]
+WARNING: [Synth 8-3295] tying undriven pin R3:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:59]
+WARNING: [Synth 8-3295] tying undriven pin R3:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:59]
+WARNING: [Synth 8-3295] tying undriven pin R3:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:59]
+WARNING: [Synth 8-3295] tying undriven pin R2:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:60]
+WARNING: [Synth 8-3295] tying undriven pin R2:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:60]
+WARNING: [Synth 8-3295] tying undriven pin R2:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:60]
+WARNING: [Synth 8-3295] tying undriven pin R1:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:61]
+WARNING: [Synth 8-3295] tying undriven pin R1:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:61]
+WARNING: [Synth 8-3295] tying undriven pin R1:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:61]
+WARNING: [Synth 8-3295] tying undriven pin R0:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:62]
+WARNING: [Synth 8-3295] tying undriven pin R0:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:62]
+WARNING: [Synth 8-3295] tying undriven pin R0:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:62]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1536.398 ; gain = 27.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1536.398 ; gain = 27.480
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 15 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1536.398 ; gain = 27.480
+file mkdir C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sim_1/new
+can't create directory "C:/Users/obaid/Desktop/GIKI/Final": file already exists
+file mkdir C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sim_1/new
+can't create directory "C:/Users/obaid/Desktop/GIKI/Final": file already exists
+file mkdir C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sim_1/new
+can't create directory "C:/Users/obaid/Desktop/GIKI/Final": file already exists
+file mkdir C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sim_1/new
+can't create directory "C:/Users/obaid/Desktop/GIKI/Final": file already exists
+file mkdir C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sim_1/new
+can't create directory "C:/Users/obaid/Desktop/GIKI/Final": file already exists
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sim_1/new
+can't create directory "C:/Users/obaid/Desktop/GIKI/Final": file already exists
+file mkdir {C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sim_1/new}
+close [ open {C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sim_1/new/tb.v} w ]
+add_files -fileset sim_1 {{C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sim_1/new/tb.v}}
+update_compile_order -fileset sim_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1536.398 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Processor' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cu' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:23]
+	Parameter RESET bound to: 0 - type: integer 
+	Parameter FETCH bound to: 1 - type: integer 
+	Parameter DECODE bound to: 2 - type: integer 
+	Parameter ADD bound to: 3 - type: integer 
+	Parameter SUB bound to: 4 - type: integer 
+	Parameter CMP bound to: 5 - type: integer 
+	Parameter MOV bound to: 6 - type: integer 
+	Parameter INC bound to: 7 - type: integer 
+	Parameter DEC bound to: 8 - type: integer 
+	Parameter SHL bound to: 9 - type: integer 
+	Parameter SHR bound to: 10 - type: integer 
+	Parameter LD bound to: 11 - type: integer 
+	Parameter STO bound to: 12 - type: integer 
+	Parameter LDI bound to: 13 - type: integer 
+	Parameter JE bound to: 14 - type: integer 
+	Parameter JNE bound to: 15 - type: integer 
+	Parameter JC bound to: 16 - type: integer 
+	Parameter JMP bound to: 17 - type: integer 
+	Parameter HALT bound to: 18 - type: integer 
+	Parameter ILLEGAL_OP bound to: 31 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:88]
+WARNING: [Synth 8-567] referenced signal 'ps_N' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'ps_Z' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'ps_C' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'IR' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'N' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'Z' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'C' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'cu' (1#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CPU_EU' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/CPU_EU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IR' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (2#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IR.v:23]
+ERROR: [Synth 8-448] named port connection 'Din' does not exist for instance 'u0' of module 'IR' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/CPU_EU.v:60]
+WARNING: [Synth 8-350] instance 'u0' of module 'IR' requires 6 connections, but only 4 given [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/CPU_EU.v:60]
+INFO: [Synth 8-6157] synthesizing module 'IDP' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Register_File' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reg16' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/reg16.v:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'reg16' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/reg16.v:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'Register_File' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'IDP' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'CPU_EU' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/CPU_EU.v:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'Processor' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1536.398 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1536.398 ; gain = 0.000
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1536.398 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Processor' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cu' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:23]
+	Parameter RESET bound to: 0 - type: integer 
+	Parameter FETCH bound to: 1 - type: integer 
+	Parameter DECODE bound to: 2 - type: integer 
+	Parameter ADD bound to: 3 - type: integer 
+	Parameter SUB bound to: 4 - type: integer 
+	Parameter CMP bound to: 5 - type: integer 
+	Parameter MOV bound to: 6 - type: integer 
+	Parameter INC bound to: 7 - type: integer 
+	Parameter DEC bound to: 8 - type: integer 
+	Parameter SHL bound to: 9 - type: integer 
+	Parameter SHR bound to: 10 - type: integer 
+	Parameter LD bound to: 11 - type: integer 
+	Parameter STO bound to: 12 - type: integer 
+	Parameter LDI bound to: 13 - type: integer 
+	Parameter JE bound to: 14 - type: integer 
+	Parameter JNE bound to: 15 - type: integer 
+	Parameter JC bound to: 16 - type: integer 
+	Parameter JMP bound to: 17 - type: integer 
+	Parameter HALT bound to: 18 - type: integer 
+	Parameter ILLEGAL_OP bound to: 31 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:88]
+WARNING: [Synth 8-567] referenced signal 'ps_N' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'ps_Z' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'ps_C' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'IR' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'N' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'Z' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'C' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'cu' (1#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CPU_EU' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/CPU_EU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IR' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (2#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IDP' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Register_File' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reg16' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/reg16.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'reg16' (3#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/reg16.v:23]
+WARNING: [Synth 8-3848] Net r0_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:41]
+WARNING: [Synth 8-3848] Net r0_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:41]
+WARNING: [Synth 8-3848] Net r0_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:41]
+WARNING: [Synth 8-3848] Net r1_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:40]
+WARNING: [Synth 8-3848] Net r1_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:40]
+WARNING: [Synth 8-3848] Net r1_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:40]
+WARNING: [Synth 8-3848] Net r2_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:39]
+WARNING: [Synth 8-3848] Net r2_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:39]
+WARNING: [Synth 8-3848] Net r2_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:39]
+WARNING: [Synth 8-3848] Net r3_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:38]
+WARNING: [Synth 8-3848] Net r3_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:38]
+WARNING: [Synth 8-3848] Net r3_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:38]
+WARNING: [Synth 8-3848] Net r4_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:37]
+WARNING: [Synth 8-3848] Net r4_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:37]
+WARNING: [Synth 8-3848] Net r4_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:37]
+WARNING: [Synth 8-3848] Net r5_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:36]
+WARNING: [Synth 8-3848] Net r5_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:36]
+WARNING: [Synth 8-3848] Net r5_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:36]
+WARNING: [Synth 8-3848] Net r6_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:35]
+WARNING: [Synth 8-3848] Net r6_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:35]
+WARNING: [Synth 8-3848] Net r6_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:35]
+WARNING: [Synth 8-3848] Net r7_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:34]
+WARNING: [Synth 8-3848] Net r7_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:34]
+WARNING: [Synth 8-3848] Net r7_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'Register_File' (4#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/ALU.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'N' does not match port width (16) of module 'ALU' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:55]
+WARNING: [Synth 8-689] width (1) of port connection 'Z' does not match port width (16) of module 'ALU' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:55]
+WARNING: [Synth 8-689] width (1) of port connection 'C' does not match port width (16) of module 'ALU' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'IDP' (6#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (7#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_EU' (8#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/CPU_EU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PWM_Generator' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DFF_PWM' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'DFF_PWM' (9#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'PWM_Generator' (10#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:3]
+WARNING: [Synth 8-689] width (16) of port connection 'increase_duty' does not match port width (1) of module 'PWM_Generator' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:55]
+WARNING: [Synth 8-689] width (16) of port connection 'decrease_duty' does not match port width (1) of module 'PWM_Generator' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:55]
+WARNING: [Synth 8-689] width (16) of port connection 'PWM_OUT' does not match port width (1) of module 'PWM_Generator' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:55]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[1] with 1st driver pin 'Processor:/u1/D_out[1]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[1] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[1] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[2] with 1st driver pin 'Processor:/u1/D_out[2]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[2] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[2] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[3] with 1st driver pin 'Processor:/u1/D_out[3]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[3] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[3] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[4] with 1st driver pin 'Processor:/u1/D_out[4]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[4] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[4] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[5] with 1st driver pin 'Processor:/u1/D_out[5]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[5] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[5] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[6] with 1st driver pin 'Processor:/u1/D_out[6]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[6] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[6] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[7] with 1st driver pin 'Processor:/u1/D_out[7]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[7] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[7] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[8] with 1st driver pin 'Processor:/u1/D_out[8]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[8] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[8] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[9] with 1st driver pin 'Processor:/u1/D_out[9]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[9] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[9] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[10] with 1st driver pin 'Processor:/u1/D_out[10]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[10] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[10] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[11] with 1st driver pin 'Processor:/u1/D_out[11]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[11] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[11] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[12] with 1st driver pin 'Processor:/u1/D_out[12]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[12] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[12] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[13] with 1st driver pin 'Processor:/u1/D_out[13]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[13] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[13] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[14] with 1st driver pin 'Processor:/u1/D_out[14]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[14] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[14] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[15] with 1st driver pin 'Processor:/u1/D_out[15]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_out[15] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net D_out[15] is connected to constant driver, other driver is ignored [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Processor' (11#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+WARNING: [Synth 8-3917] design Processor has port D_out[15] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[14] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[13] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[12] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[11] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[10] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[9] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[8] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[7] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[6] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[5] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[4] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[3] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[2] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_out[1] driven by constant 0
+WARNING: [Synth 8-3331] design Register_File has unconnected port W_Adr[2]
+WARNING: [Synth 8-3331] design Register_File has unconnected port W_Adr[1]
+WARNING: [Synth 8-3331] design Register_File has unconnected port W_Adr[0]
+WARNING: [Synth 8-3331] design Register_File has unconnected port we
+WARNING: [Synth 8-3331] design Register_File has unconnected port R_Adr[2]
+WARNING: [Synth 8-3331] design Register_File has unconnected port R_Adr[1]
+WARNING: [Synth 8-3331] design Register_File has unconnected port R_Adr[0]
+WARNING: [Synth 8-3331] design Register_File has unconnected port S_Adr[2]
+WARNING: [Synth 8-3331] design Register_File has unconnected port S_Adr[1]
+WARNING: [Synth 8-3331] design Register_File has unconnected port S_Adr[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1550.148 ; gain = 13.750
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin R7:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:55]
+WARNING: [Synth 8-3295] tying undriven pin R7:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:55]
+WARNING: [Synth 8-3295] tying undriven pin R7:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:55]
+WARNING: [Synth 8-3295] tying undriven pin R6:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:56]
+WARNING: [Synth 8-3295] tying undriven pin R6:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:56]
+WARNING: [Synth 8-3295] tying undriven pin R6:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:56]
+WARNING: [Synth 8-3295] tying undriven pin R5:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:57]
+WARNING: [Synth 8-3295] tying undriven pin R5:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:57]
+WARNING: [Synth 8-3295] tying undriven pin R5:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:57]
+WARNING: [Synth 8-3295] tying undriven pin R4:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:58]
+WARNING: [Synth 8-3295] tying undriven pin R4:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:58]
+WARNING: [Synth 8-3295] tying undriven pin R4:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:58]
+WARNING: [Synth 8-3295] tying undriven pin R3:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:59]
+WARNING: [Synth 8-3295] tying undriven pin R3:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:59]
+WARNING: [Synth 8-3295] tying undriven pin R3:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:59]
+WARNING: [Synth 8-3295] tying undriven pin R2:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:60]
+WARNING: [Synth 8-3295] tying undriven pin R2:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:60]
+WARNING: [Synth 8-3295] tying undriven pin R2:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:60]
+WARNING: [Synth 8-3295] tying undriven pin R1:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:61]
+WARNING: [Synth 8-3295] tying undriven pin R1:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:61]
+WARNING: [Synth 8-3295] tying undriven pin R1:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:61]
+WARNING: [Synth 8-3295] tying undriven pin R0:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:62]
+WARNING: [Synth 8-3295] tying undriven pin R0:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:62]
+WARNING: [Synth 8-3295] tying undriven pin R0:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:62]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1550.277 ; gain = 13.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1550.277 ; gain = 13.879
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 15 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1577.652 ; gain = 41.254
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1577.652 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Processor' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cu' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:23]
+	Parameter RESET bound to: 0 - type: integer 
+	Parameter FETCH bound to: 1 - type: integer 
+	Parameter DECODE bound to: 2 - type: integer 
+	Parameter ADD bound to: 3 - type: integer 
+	Parameter SUB bound to: 4 - type: integer 
+	Parameter CMP bound to: 5 - type: integer 
+	Parameter MOV bound to: 6 - type: integer 
+	Parameter INC bound to: 7 - type: integer 
+	Parameter DEC bound to: 8 - type: integer 
+	Parameter SHL bound to: 9 - type: integer 
+	Parameter SHR bound to: 10 - type: integer 
+	Parameter LD bound to: 11 - type: integer 
+	Parameter STO bound to: 12 - type: integer 
+	Parameter LDI bound to: 13 - type: integer 
+	Parameter JE bound to: 14 - type: integer 
+	Parameter JNE bound to: 15 - type: integer 
+	Parameter JC bound to: 16 - type: integer 
+	Parameter JMP bound to: 17 - type: integer 
+	Parameter HALT bound to: 18 - type: integer 
+	Parameter ILLEGAL_OP bound to: 31 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:88]
+WARNING: [Synth 8-567] referenced signal 'ps_N' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'ps_Z' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'ps_C' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'IR' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'N' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'Z' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'C' should be on the sensitivity list [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'cu' (1#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CPU_EU' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/CPU_EU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IR' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (2#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IDP' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Register_File' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reg16' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/reg16.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'reg16' (3#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/reg16.v:23]
+WARNING: [Synth 8-3848] Net r0_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:41]
+WARNING: [Synth 8-3848] Net r0_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:41]
+WARNING: [Synth 8-3848] Net r0_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:41]
+WARNING: [Synth 8-3848] Net r1_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:40]
+WARNING: [Synth 8-3848] Net r1_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:40]
+WARNING: [Synth 8-3848] Net r1_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:40]
+WARNING: [Synth 8-3848] Net r2_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:39]
+WARNING: [Synth 8-3848] Net r2_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:39]
+WARNING: [Synth 8-3848] Net r2_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:39]
+WARNING: [Synth 8-3848] Net r3_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:38]
+WARNING: [Synth 8-3848] Net r3_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:38]
+WARNING: [Synth 8-3848] Net r3_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:38]
+WARNING: [Synth 8-3848] Net r4_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:37]
+WARNING: [Synth 8-3848] Net r4_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:37]
+WARNING: [Synth 8-3848] Net r4_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:37]
+WARNING: [Synth 8-3848] Net r5_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:36]
+WARNING: [Synth 8-3848] Net r5_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:36]
+WARNING: [Synth 8-3848] Net r5_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:36]
+WARNING: [Synth 8-3848] Net r6_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:35]
+WARNING: [Synth 8-3848] Net r6_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:35]
+WARNING: [Synth 8-3848] Net r6_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:35]
+WARNING: [Synth 8-3848] Net r7_ld in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:34]
+WARNING: [Synth 8-3848] Net r7_oea in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:34]
+WARNING: [Synth 8-3848] Net r7_oeb in module/entity Register_File does not have driver. [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'Register_File' (4#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/ALU.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'N' does not match port width (16) of module 'ALU' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:55]
+WARNING: [Synth 8-689] width (1) of port connection 'Z' does not match port width (16) of module 'ALU' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:55]
+WARNING: [Synth 8-689] width (1) of port connection 'C' does not match port width (16) of module 'ALU' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'IDP' (6#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (7#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_EU' (8#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/CPU_EU.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'address' does not match port width (16) of module 'CPU_EU' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:55]
+WARNING: [Synth 8-689] width (1) of port connection 'D_out' does not match port width (16) of module 'CPU_EU' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:55]
+INFO: [Synth 8-6157] synthesizing module 'PWM_Generator' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DFF_PWM' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'DFF_PWM' (9#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:61]
+WARNING: [Synth 8-689] width (16) of port connection 'D' does not match port width (1) of module 'DFF_PWM' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:36]
+WARNING: [Synth 8-689] width (16) of port connection 'D' does not match port width (1) of module 'DFF_PWM' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'PWM_Generator' (10#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'increase_duty' does not match port width (16) of module 'PWM_Generator' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:57]
+WARNING: [Synth 8-689] width (1) of port connection 'decrease_duty' does not match port width (16) of module 'PWM_Generator' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:57]
+WARNING: [Synth 8-689] width (16) of port connection 'PWM_OUT' does not match port width (1) of module 'PWM_Generator' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:57]
+WARNING: [Synth 8-6104] Input port 'D_OUT' has an internal driver [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'Processor' (11#1) [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+WARNING: [Synth 8-3917] design Processor has port D_OUT[15] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[14] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[13] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[12] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[11] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[10] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[9] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[8] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[7] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[6] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[5] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[4] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[3] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[2] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[1] driven by constant 0
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port increase_duty[15]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port increase_duty[14]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port increase_duty[13]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port increase_duty[12]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port increase_duty[11]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port increase_duty[10]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port increase_duty[9]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port increase_duty[8]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port increase_duty[7]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port increase_duty[6]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port increase_duty[5]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port increase_duty[4]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port increase_duty[3]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port increase_duty[2]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port increase_duty[1]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port decrease_duty[15]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port decrease_duty[14]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port decrease_duty[13]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port decrease_duty[12]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port decrease_duty[11]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port decrease_duty[10]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port decrease_duty[9]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port decrease_duty[8]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port decrease_duty[7]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port decrease_duty[6]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port decrease_duty[5]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port decrease_duty[4]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port decrease_duty[3]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port decrease_duty[2]
+WARNING: [Synth 8-3331] design PWM_Generator has unconnected port decrease_duty[1]
+WARNING: [Synth 8-3331] design Register_File has unconnected port W_Adr[2]
+WARNING: [Synth 8-3331] design Register_File has unconnected port W_Adr[1]
+WARNING: [Synth 8-3331] design Register_File has unconnected port W_Adr[0]
+WARNING: [Synth 8-3331] design Register_File has unconnected port we
+WARNING: [Synth 8-3331] design Register_File has unconnected port R_Adr[2]
+WARNING: [Synth 8-3331] design Register_File has unconnected port R_Adr[1]
+WARNING: [Synth 8-3331] design Register_File has unconnected port R_Adr[0]
+WARNING: [Synth 8-3331] design Register_File has unconnected port S_Adr[2]
+WARNING: [Synth 8-3331] design Register_File has unconnected port S_Adr[1]
+WARNING: [Synth 8-3331] design Register_File has unconnected port S_Adr[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1577.902 ; gain = 0.250
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[15] with 1st driver pin 'D_OUT[15]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[15] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[14] with 1st driver pin 'D_OUT[14]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[14] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[13] with 1st driver pin 'D_OUT[13]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[13] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[12] with 1st driver pin 'D_OUT[12]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[12] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[11] with 1st driver pin 'D_OUT[11]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[11] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[10] with 1st driver pin 'D_OUT[10]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[10] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[9] with 1st driver pin 'D_OUT[9]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[9] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[8] with 1st driver pin 'D_OUT[8]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[8] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[7] with 1st driver pin 'D_OUT[7]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[7] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[6] with 1st driver pin 'D_OUT[6]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[6] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[5] with 1st driver pin 'D_OUT[5]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[5] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[4] with 1st driver pin 'D_OUT[4]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[4] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[3] with 1st driver pin 'D_OUT[3]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[3] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[2] with 1st driver pin 'D_OUT[2]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[2] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[1] with 1st driver pin 'D_OUT[1]' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net D_OUT[1] with 2nd driver pin 'GND' [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       15|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin R7:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:55]
+WARNING: [Synth 8-3295] tying undriven pin R7:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:55]
+WARNING: [Synth 8-3295] tying undriven pin R7:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:55]
+WARNING: [Synth 8-3295] tying undriven pin R6:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:56]
+WARNING: [Synth 8-3295] tying undriven pin R6:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:56]
+WARNING: [Synth 8-3295] tying undriven pin R6:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:56]
+WARNING: [Synth 8-3295] tying undriven pin R5:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:57]
+WARNING: [Synth 8-3295] tying undriven pin R5:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:57]
+WARNING: [Synth 8-3295] tying undriven pin R5:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:57]
+WARNING: [Synth 8-3295] tying undriven pin R4:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:58]
+WARNING: [Synth 8-3295] tying undriven pin R4:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:58]
+WARNING: [Synth 8-3295] tying undriven pin R4:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:58]
+WARNING: [Synth 8-3295] tying undriven pin R3:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:59]
+WARNING: [Synth 8-3295] tying undriven pin R3:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:59]
+WARNING: [Synth 8-3295] tying undriven pin R3:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:59]
+WARNING: [Synth 8-3295] tying undriven pin R2:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:60]
+WARNING: [Synth 8-3295] tying undriven pin R2:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:60]
+WARNING: [Synth 8-3295] tying undriven pin R2:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:60]
+WARNING: [Synth 8-3295] tying undriven pin R1:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:61]
+WARNING: [Synth 8-3295] tying undriven pin R1:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:61]
+WARNING: [Synth 8-3295] tying undriven pin R1:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:61]
+WARNING: [Synth 8-3295] tying undriven pin R0:ld to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:62]
+WARNING: [Synth 8-3295] tying undriven pin R0:oeA to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:62]
+WARNING: [Synth 8-3295] tying undriven pin R0:oeB to constant 0 [C:/Users/obaid/Desktop/GIKI/Final Year Project/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:62]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1577.902 ; gain = 0.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1577.902 ; gain = 0.250
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1624.375 ; gain = 46.723

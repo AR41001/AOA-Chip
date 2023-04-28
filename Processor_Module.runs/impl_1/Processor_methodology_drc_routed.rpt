@@ -1,0 +1,271 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Apr 26 19:40:21 2023
+| Host         : DESKTOP-VDVLD23 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file Processor_methodology_drc_routed.rpt -pb Processor_methodology_drc_routed.pb -rpx Processor_methodology_drc_routed.rpx
+| Design       : Processor
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 47
++-----------+----------+-----------------------------+------------+
+| Rule      | Severity | Description                 | Violations |
++-----------+----------+-----------------------------+------------+
+| TIMING-17 | Warning  | Non-clocked sequential cell | 21         |
+| TIMING-20 | Warning  | Non-clocked latch           | 26         |
++-----------+----------+-----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Warning
+Non-clocked sequential cell  
+The clock pin u0/FSM_sequential_state_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Warning
+Non-clocked sequential cell  
+The clock pin u0/FSM_sequential_state_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Warning
+Non-clocked sequential cell  
+The clock pin u0/FSM_sequential_state_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Warning
+Non-clocked sequential cell  
+The clock pin u0/FSM_sequential_state_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Warning
+Non-clocked sequential cell  
+The clock pin u0/FSM_sequential_state_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Warning
+Non-clocked sequential cell  
+The clock pin u0/ps_C_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Warning
+Non-clocked sequential cell  
+The clock pin u0/ps_N_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Warning
+Non-clocked sequential cell  
+The clock pin u0/ps_Z_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Warning
+Non-clocked sequential cell  
+The clock pin u1/u0/Dout_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Warning
+Non-clocked sequential cell  
+The clock pin u1/u0/Dout_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Warning
+Non-clocked sequential cell  
+The clock pin u1/u0/Dout_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Warning
+Non-clocked sequential cell  
+The clock pin u1/u0/Dout_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Warning
+Non-clocked sequential cell  
+The clock pin u1/u0/Dout_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Warning
+Non-clocked sequential cell  
+The clock pin u1/u0/Dout_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Warning
+Non-clocked sequential cell  
+The clock pin u1/u0/Dout_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Warning
+Non-clocked sequential cell  
+The clock pin u1/u0/Dout_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Warning
+Non-clocked sequential cell  
+The clock pin u1/u2/Dout_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Warning
+Non-clocked sequential cell  
+The clock pin u2/counter_PWM_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Warning
+Non-clocked sequential cell  
+The clock pin u2/counter_PWM_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Warning
+Non-clocked sequential cell  
+The clock pin u2/counter_PWM_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Warning
+Non-clocked sequential cell  
+The clock pin u2/counter_PWM_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch u0/FSM_sequential_nextstate_reg[0] cannot be properly analyzed as its control pin u0/FSM_sequential_nextstate_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch u0/FSM_sequential_nextstate_reg[1] cannot be properly analyzed as its control pin u0/FSM_sequential_nextstate_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch u0/FSM_sequential_nextstate_reg[2] cannot be properly analyzed as its control pin u0/FSM_sequential_nextstate_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch u0/FSM_sequential_nextstate_reg[3] cannot be properly analyzed as its control pin u0/FSM_sequential_nextstate_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch u0/FSM_sequential_nextstate_reg[4] cannot be properly analyzed as its control pin u0/FSM_sequential_nextstate_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch u0/adr_sel_reg cannot be properly analyzed as its control pin u0/adr_sel_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch u0/alu_op_reg[0] cannot be properly analyzed as its control pin u0/alu_op_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch u0/alu_op_reg[1] cannot be properly analyzed as its control pin u0/alu_op_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch u0/alu_op_reg[2] cannot be properly analyzed as its control pin u0/alu_op_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch u0/ir_ld_reg cannot be properly analyzed as its control pin u0/ir_ld_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch u0/mw_en_reg cannot be properly analyzed as its control pin u0/mw_en_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch u0/ns_C_reg cannot be properly analyzed as its control pin u0/ns_C_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch u0/ns_N_reg cannot be properly analyzed as its control pin u0/ns_N_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch u0/ns_Z_reg cannot be properly analyzed as its control pin u0/ns_Z_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch u0/pc_inc_reg cannot be properly analyzed as its control pin u0/pc_inc_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch u0/pc_ld_reg cannot be properly analyzed as its control pin u0/pc_ld_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch u0/pc_sel_reg cannot be properly analyzed as its control pin u0/pc_sel_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch u0/s_sel_reg cannot be properly analyzed as its control pin u0/s_sel_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch u0/status_reg[0] cannot be properly analyzed as its control pin u0/status_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch u0/status_reg[1] cannot be properly analyzed as its control pin u0/status_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch u0/status_reg[2] cannot be properly analyzed as its control pin u0/status_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch u0/status_reg[3] cannot be properly analyzed as its control pin u0/status_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch u0/status_reg[4] cannot be properly analyzed as its control pin u0/status_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch u0/status_reg[5] cannot be properly analyzed as its control pin u0/status_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch u0/status_reg[6] cannot be properly analyzed as its control pin u0/status_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch u0/status_reg[7] cannot be properly analyzed as its control pin u0/status_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+

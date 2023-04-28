@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Apr 25 11:02:37 2023
+# Process ID: 2176
+# Current directory: D:/Processor_Module
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5216 D:\Processor_Module\Processor_Module.xpr
+# Log file: D:/Processor_Module/vivado.log
+# Journal file: D:/Processor_Module\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Processor_Module/Processor_Module.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1

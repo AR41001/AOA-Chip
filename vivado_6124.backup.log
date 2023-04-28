@@ -1,0 +1,316 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Apr 26 19:22:08 2023
+# Process ID: 6124
+# Current directory: D:/Processor_Module
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11968 D:\Processor_Module\Processor_Module.xpr
+# Log file: D:/Processor_Module/vivado.log
+# Journal file: D:/Processor_Module\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Processor_Module/Processor_Module.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 918.379 ; gain = 169.977
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: Processor
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1023.945 ; gain = 102.559
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Processor' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cu' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:23]
+	Parameter RESET bound to: 0 - type: integer 
+	Parameter FETCH bound to: 1 - type: integer 
+	Parameter DECODE bound to: 2 - type: integer 
+	Parameter ADD bound to: 3 - type: integer 
+	Parameter SUB bound to: 4 - type: integer 
+	Parameter CMP bound to: 5 - type: integer 
+	Parameter MOV bound to: 6 - type: integer 
+	Parameter INC bound to: 7 - type: integer 
+	Parameter DEC bound to: 8 - type: integer 
+	Parameter SHL bound to: 9 - type: integer 
+	Parameter SHR bound to: 10 - type: integer 
+	Parameter LD bound to: 11 - type: integer 
+	Parameter STO bound to: 12 - type: integer 
+	Parameter LDI bound to: 13 - type: integer 
+	Parameter JE bound to: 14 - type: integer 
+	Parameter JNE bound to: 15 - type: integer 
+	Parameter JC bound to: 16 - type: integer 
+	Parameter JMP bound to: 17 - type: integer 
+	Parameter HALT bound to: 18 - type: integer 
+	Parameter ILLEGAL_OP bound to: 31 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:88]
+WARNING: [Synth 8-567] referenced signal 'ps_N' should be on the sensitivity list [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'ps_Z' should be on the sensitivity list [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'ps_C' should be on the sensitivity list [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'IR' should be on the sensitivity list [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'N' should be on the sensitivity list [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'Z' should be on the sensitivity list [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+WARNING: [Synth 8-567] referenced signal 'C' should be on the sensitivity list [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'cu' (1#1) [D:/Processor_Module/Processor_Module.srcs/sources_1/new/cu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CPU_EU' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/CPU_EU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IR' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/IR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (2#1) [D:/Processor_Module/Processor_Module.srcs/sources_1/new/IR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IDP' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Register_File' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reg16' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/reg16.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'reg16' (3#1) [D:/Processor_Module/Processor_Module.srcs/sources_1/new/reg16.v:23]
+WARNING: [Synth 8-3848] Net r0_ld in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:41]
+WARNING: [Synth 8-3848] Net r0_oea in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:41]
+WARNING: [Synth 8-3848] Net r0_oeb in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:41]
+WARNING: [Synth 8-3848] Net r1_ld in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:40]
+WARNING: [Synth 8-3848] Net r1_oea in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:40]
+WARNING: [Synth 8-3848] Net r1_oeb in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:40]
+WARNING: [Synth 8-3848] Net r2_ld in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:39]
+WARNING: [Synth 8-3848] Net r2_oea in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:39]
+WARNING: [Synth 8-3848] Net r2_oeb in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:39]
+WARNING: [Synth 8-3848] Net r3_ld in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:38]
+WARNING: [Synth 8-3848] Net r3_oea in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:38]
+WARNING: [Synth 8-3848] Net r3_oeb in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:38]
+WARNING: [Synth 8-3848] Net r4_ld in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:37]
+WARNING: [Synth 8-3848] Net r4_oea in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:37]
+WARNING: [Synth 8-3848] Net r4_oeb in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:37]
+WARNING: [Synth 8-3848] Net r5_ld in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:36]
+WARNING: [Synth 8-3848] Net r5_oea in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:36]
+WARNING: [Synth 8-3848] Net r5_oeb in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:36]
+WARNING: [Synth 8-3848] Net r6_ld in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:35]
+WARNING: [Synth 8-3848] Net r6_oea in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:35]
+WARNING: [Synth 8-3848] Net r6_oeb in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:35]
+WARNING: [Synth 8-3848] Net r7_ld in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:34]
+WARNING: [Synth 8-3848] Net r7_oea in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:34]
+WARNING: [Synth 8-3848] Net r7_oeb in module/entity Register_File does not have driver. [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'Register_File' (4#1) [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [D:/Processor_Module/Processor_Module.srcs/sources_1/new/ALU.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'N' does not match port width (16) of module 'ALU' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:55]
+WARNING: [Synth 8-689] width (1) of port connection 'Z' does not match port width (16) of module 'ALU' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:55]
+WARNING: [Synth 8-689] width (1) of port connection 'C' does not match port width (16) of module 'ALU' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'IDP' (6#1) [D:/Processor_Module/Processor_Module.srcs/sources_1/new/IDP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (7#1) [D:/Processor_Module/Processor_Module.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_EU' (8#1) [D:/Processor_Module/Processor_Module.srcs/sources_1/new/CPU_EU.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'address' does not match port width (16) of module 'CPU_EU' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:56]
+WARNING: [Synth 8-689] width (1) of port connection 'D_out' does not match port width (16) of module 'CPU_EU' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:56]
+INFO: [Synth 8-6157] synthesizing module 'Button_Press' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Button_Press.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DFF_PWM' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'DFF_PWM' (9#1) [D:/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'Button_Press' (10#1) [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Button_Press.v:23]
+WARNING: [Synth 8-689] width (16) of port connection 'BUTTONS' does not match port width (4) of module 'Button_Press' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:59]
+INFO: [Synth 8-6157] synthesizing module 'PWM_Generator' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PWM_Generator' (11#1) [D:/Processor_Module/Processor_Module.srcs/sources_1/new/PWM_Generator.v:3]
+WARNING: [Synth 8-689] width (16) of port connection 'PWM_OUT' does not match port width (1) of module 'PWM_Generator' [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'Processor' (12#1) [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Processor.v:23]
+WARNING: [Synth 8-3917] design Processor has port D_OUT[15] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[14] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[13] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[12] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[11] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[10] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[9] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[8] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[7] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[6] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[5] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[4] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[3] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[2] driven by constant 0
+WARNING: [Synth 8-3917] design Processor has port D_OUT[1] driven by constant 0
+WARNING: [Synth 8-3331] design Button_Press has unconnected port BUTTONS[3]
+WARNING: [Synth 8-3331] design Button_Press has unconnected port BUTTONS[2]
+WARNING: [Synth 8-3331] design Button_Press has unconnected port BUTTONS[1]
+WARNING: [Synth 8-3331] design Button_Press has unconnected port BUTTONS[0]
+WARNING: [Synth 8-3331] design Register_File has unconnected port W_Adr[2]
+WARNING: [Synth 8-3331] design Register_File has unconnected port W_Adr[1]
+WARNING: [Synth 8-3331] design Register_File has unconnected port W_Adr[0]
+WARNING: [Synth 8-3331] design Register_File has unconnected port we
+WARNING: [Synth 8-3331] design Register_File has unconnected port R_Adr[2]
+WARNING: [Synth 8-3331] design Register_File has unconnected port R_Adr[1]
+WARNING: [Synth 8-3331] design Register_File has unconnected port R_Adr[0]
+WARNING: [Synth 8-3331] design Register_File has unconnected port S_Adr[2]
+WARNING: [Synth 8-3331] design Register_File has unconnected port S_Adr[1]
+WARNING: [Synth 8-3331] design Register_File has unconnected port S_Adr[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1065.922 ; gain = 144.535
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin R7:ld to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:55]
+WARNING: [Synth 8-3295] tying undriven pin R7:oeA to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:55]
+WARNING: [Synth 8-3295] tying undriven pin R7:oeB to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:55]
+WARNING: [Synth 8-3295] tying undriven pin R6:ld to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:56]
+WARNING: [Synth 8-3295] tying undriven pin R6:oeA to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:56]
+WARNING: [Synth 8-3295] tying undriven pin R6:oeB to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:56]
+WARNING: [Synth 8-3295] tying undriven pin R5:ld to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:57]
+WARNING: [Synth 8-3295] tying undriven pin R5:oeA to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:57]
+WARNING: [Synth 8-3295] tying undriven pin R5:oeB to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:57]
+WARNING: [Synth 8-3295] tying undriven pin R4:ld to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:58]
+WARNING: [Synth 8-3295] tying undriven pin R4:oeA to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:58]
+WARNING: [Synth 8-3295] tying undriven pin R4:oeB to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:58]
+WARNING: [Synth 8-3295] tying undriven pin R3:ld to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:59]
+WARNING: [Synth 8-3295] tying undriven pin R3:oeA to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:59]
+WARNING: [Synth 8-3295] tying undriven pin R3:oeB to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:59]
+WARNING: [Synth 8-3295] tying undriven pin R2:ld to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:60]
+WARNING: [Synth 8-3295] tying undriven pin R2:oeA to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:60]
+WARNING: [Synth 8-3295] tying undriven pin R2:oeB to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:60]
+WARNING: [Synth 8-3295] tying undriven pin R1:ld to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:61]
+WARNING: [Synth 8-3295] tying undriven pin R1:oeA to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:61]
+WARNING: [Synth 8-3295] tying undriven pin R1:oeB to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:61]
+WARNING: [Synth 8-3295] tying undriven pin R0:ld to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:62]
+WARNING: [Synth 8-3295] tying undriven pin R0:oeA to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:62]
+WARNING: [Synth 8-3295] tying undriven pin R0:oeB to constant 0 [D:/Processor_Module/Processor_Module.srcs/sources_1/new/Register_File.v:62]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1065.922 ; gain = 144.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1065.922 ; gain = 144.535
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 15 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Processor_Module/Processor_Module.srcs/constrs_1/new/Processor_XDC.xdc]
+Finished Parsing XDC File [D:/Processor_Module/Processor_Module.srcs/constrs_1/new/Processor_XDC.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1430.293 ; gain = 508.906
+30 Infos, 91 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1430.293 ; gain = 508.906
+place_ports reset P17
+place_ports mw_en N16
+place_ports inc N15
+startgroup
+set_property package_pin "" [get_ports [list  mw_en]]
+place_ports dec N16
+endgroup
+place_ports mw_en C17
+place_ports D_out D18
+place_ports Address E18
+place_ports {status[0]} G17
+place_ports {status[1]} D17
+place_ports {status[2]} E17
+place_ports {status[3]} F18
+place_ports {status[4]} G18
+place_ports {status[5]} D14
+place_ports {status[6]} F16
+place_ports {status[7]} G16
+place_ports {D_OUT[0]} H17
+place_ports {D_OUT[1]} K15
+place_ports {D_OUT[2]} J13
+place_ports {D_OUT[3]} N14
+place_ports {D_OUT[4]} R18
+place_ports {D_OUT[5]} V17
+place_ports {D_OUT[6]} U17
+place_ports {D_OUT[7]} U16
+place_ports {D_OUT[8]} V16
+place_ports {D_OUT[9]} T15
+place_ports {D_OUT[10]} U14
+place_ports {D_OUT[11]} T16
+place_ports {D_OUT[12]} V15
+place_ports {D_OUT[13]} V14
+place_ports {D_OUT[14]} V12
+place_ports {D_OUT[15]} V11
+place_ports {D_in[0]} J15
+place_ports {D_in[1]} L16
+place_ports {D_in[2]} M13
+place_ports {D_in[3]} R15
+place_ports {D_in[4]} R17
+place_ports {D_in[5]} T18
+place_ports {D_in[6]} U18
+place_ports {D_in[7]} R13
+place_ports {D_in[8]} T8
+place_ports {D_in[9]} U8
+place_ports {D_in[10]} R16
+place_ports {D_in[11]} T13
+place_ports {D_in[12]} H6
+place_ports {D_in[13]} U12
+place_ports {D_in[14]} U11
+place_ports {D_in[15]} V10
+save_constraints
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Apr 26 19:38:23 2023] Launched synth_1...
+Run output will be captured here: D:/Processor_Module/Processor_Module.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Apr 26 19:39:08 2023] Launched impl_1...
+Run output will be captured here: D:/Processor_Module/Processor_Module.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Apr 26 19:40:32 2023] Launched impl_1...
+Run output will be captured here: D:/Processor_Module/Processor_Module.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6EF50A
+set_property PROGRAM.FILE {D:/Processor_Module/Processor_Module.runs/impl_1/Processor.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Processor_Module/Processor_Module.runs/impl_1/Processor.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A6EF50A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6EF50A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A6EF50A
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Processor_Module/Processor_Module.srcs/constrs_1/new/Processor_XDC.xdc]
+Finished Parsing XDC File [D:/Processor_Module/Processor_Module.srcs/constrs_1/new/Processor_XDC.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2315.809 ; gain = 19.020
+report_clock_interaction -delay_type min_max -significant_digits 3 -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+report_clock_networks -name {network_1}
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 27 13:38:26 2023...

@@ -1,0 +1,88 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Apr 26 19:22:08 2023
+# Process ID: 6124
+# Current directory: D:/Processor_Module
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11968 D:\Processor_Module\Processor_Module.xpr
+# Log file: D:/Processor_Module/vivado.log
+# Journal file: D:/Processor_Module\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Processor_Module/Processor_Module.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+place_ports reset P17
+place_ports mw_en N16
+place_ports inc N15
+startgroup
+set_property package_pin "" [get_ports [list  mw_en]]
+place_ports dec N16
+endgroup
+place_ports mw_en C17
+place_ports D_out D18
+place_ports Address E18
+place_ports {status[0]} G17
+place_ports {status[1]} D17
+place_ports {status[2]} E17
+place_ports {status[3]} F18
+place_ports {status[4]} G18
+place_ports {status[5]} D14
+place_ports {status[6]} F16
+place_ports {status[7]} G16
+place_ports {D_OUT[0]} H17
+place_ports {D_OUT[1]} K15
+place_ports {D_OUT[2]} J13
+place_ports {D_OUT[3]} N14
+place_ports {D_OUT[4]} R18
+place_ports {D_OUT[5]} V17
+place_ports {D_OUT[6]} U17
+place_ports {D_OUT[7]} U16
+place_ports {D_OUT[8]} V16
+place_ports {D_OUT[9]} T15
+place_ports {D_OUT[10]} U14
+place_ports {D_OUT[11]} T16
+place_ports {D_OUT[12]} V15
+place_ports {D_OUT[13]} V14
+place_ports {D_OUT[14]} V12
+place_ports {D_OUT[15]} V11
+place_ports {D_in[0]} J15
+place_ports {D_in[1]} L16
+place_ports {D_in[2]} M13
+place_ports {D_in[3]} R15
+place_ports {D_in[4]} R17
+place_ports {D_in[5]} T18
+place_ports {D_in[6]} U18
+place_ports {D_in[7]} R13
+place_ports {D_in[8]} T8
+place_ports {D_in[9]} U8
+place_ports {D_in[10]} R16
+place_ports {D_in[11]} T13
+place_ports {D_in[12]} H6
+place_ports {D_in[13]} U12
+place_ports {D_in[14]} U11
+place_ports {D_in[15]} V10
+save_constraints
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Processor_Module/Processor_Module.runs/impl_1/Processor.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Processor_Module/Processor_Module.runs/impl_1/Processor.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+report_clock_interaction -delay_type min_max -significant_digits 3 -name timing_1
+report_clock_networks -name {network_1}
